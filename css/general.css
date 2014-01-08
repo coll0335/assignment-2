@@ -1,0 +1,302 @@
+@charset "UTF-8";
+/* Responsive Setup */
+
+@-moz-viewport { width: device-width; scale: 1;}
+@-ms-viewport { width: device-width; scale: 1;}
+@-webkit-viewport { width: device-width; scale: 1;}
+@-o-viewport { width: device-width; scale: 1;}
+@viewport { width: device-width; scale: 1;}
+
+html {
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-o-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+/* CSS */
+
+html, body {
+	font-family:sans-serif;
+	margin:0;
+	padding:0;
+	width:100%;
+	height: 100%;
+	line-height: 1.5rem;
+	letter-spacing: 1px;
+}
+
+body{
+	position: relative;
+	z-index:999;
+}
+
+main {
+	width:90%;
+	margin: 0 auto;
+}
+/* Header */
+
+img {
+	width:100%;
+}
+
+.overlay-off{
+	background-color: transparent;
+	position: absolute;
+	z-index: -1000;
+}
+
+.overlay-on{
+	position: absolute;
+	background-color: #000;
+	opacity: .7;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+
+.logo {
+	width: 100%;
+	margin-top:1.5rem;
+}
+
+.nav-top li:hover,
+.nav-top li:focus,
+.nav-top li:active {
+	opacity: .7;
+}
+
+/* Home */
+
+.hours {
+	background-color:#CCCCCC;
+	margin-top: 5%;
+	padding: 2% 0;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.hours p {
+	margin-left: 5%;
+	font-size:14px;
+	line-height: .5rem;
+}
+
+.hours h2 {
+	margin-left: 5%;
+	font-size:24px;
+}
+
+
+/* Pricelist */
+
+.pricelist {
+	background-color:#CCCCCC;
+	
+}
+
+.pricelist h3 {
+	font-size:24px;
+	margin: 0;
+	margin-bottom: 2%;
+	padding-top: 5%;
+	padding-left: 5%;
+}
+
+.pricelist h4 {
+	font-size:18px;
+	font-weight:normal;
+	padding-left: 5%;
+	margin-bottom: 2%;
+}
+
+.pricelist ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+.pricelist li {
+	font-size: 12px;
+	padding-left: 5%;
+}
+
+.nonmembers li:last-child {
+	padding-bottom: 5%;
+}
+
+.pricelist a,
+.pricelist a:link,
+.pricelist a:visited {
+	float:right;
+	margin-top: -1.5rem;
+	margin-right: 1rem;
+	font-size:12px;
+	color:#000000;
+	text-decoration:none;
+}
+
+.pricelist a:hover,
+.pricelist a:focus,
+.pricelist a:active {
+	opacity:.6;
+}
+/* Schedule */
+
+.schedule {
+	margin-bottom: 2rem;
+}
+
+.swimtypes {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+
+.operations {
+	background-color:hsla(0,0%,80%,1);
+	margin:0;
+	padding:0;
+	width:100%;
+}
+
+.operations li {
+	display:inline;
+	font-size:12px;
+	padding-left:.5rem;
+	padding-right:6rem;
+	
+}
+
+.three-list-operation {
+	list-style:none;
+	background-color:hsla(0,0%,80%,1);
+	margin:0;
+	padding:0;
+	width:100%;
+}
+
+.three-list-operation li {
+	display:inline;
+	font-size:12px;
+	padding-left:.5rem;
+	padding-right:6rem;
+	
+}
+
+.three-list-operation li:nth-child(2) {
+	padding-right:8rem;
+}
+
+.schedule a,
+.schedule a:link,
+.schedule a:visited {
+	float:right;
+	margin-top: -1.5rem;
+	font-size:12px;
+	margin-right:1rem;
+	color:#000000;
+	text-decoration:none;
+}
+
+.schedule a:hover,
+.schedule a:focus,
+.schedule a:active {
+	opacity:.6;
+}
+
+/* Footer */
+
+.nav-wrapper {
+	background-color: #333333 .3;
+	position:fixed;
+	top: 21rem;
+	z-index: 10000;
+}
+
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited {
+	display:block;
+	width:130px;
+	height:130px;
+	position:fixed;
+	background: url(../images/nav-bottom-btn.svg) no-repeat center center;
+	left: -3.45rem;
+	top:20rem;
+}
+
+.nav-btn:hover,
+.nav-btn:focus,
+.nav-btn:active {
+	opacity:.6;
+}
+
+.nav li,
+.nav li:link
+.nav li:visited {
+	margin-top:-.5rem;
+	margin-left:1rem;
+	width: 4rem;
+	text-decoration:none;
+	display:inline-block;
+}
+
+.nav-top ul{
+	padding: 0;
+	margin: 1rem 0 0 ;
+	text-align: center;
+}
+
+
+
+.nav-bottom li {
+	margin-top: 0rem;
+	margin-bottom:-2rem;
+}
+
+.nav-bottom-bckgrnd {
+	background-color:hsla(0,0%,0%,.8);
+	position:fixed;
+	top:20rem;
+}
+
+.nav-bottom li:hover,
+.nav-bottom li:focus,
+.nav-bottom li:active {
+	opacity: .7;
+}
+
+.nav li:first-child {
+	margin-left:0
+}
+
+
+footer p {
+	padding-top:.75rem;
+	font-size:12px;
+	margin-left: 2%;
+	color:#FFFFFF;
+}
+
+footer {
+	width:100%;
+	height: 3rem;
+	background-color:#666;
+}
+
+
+/* Toggle Nav Style */
+
+.nav-bottom {
+	display:none;
+}
+
+.nav-bottom[data-state="expanded"] {
+	display:inline-block;
+}
